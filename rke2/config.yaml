@@ -1,3 +1,5 @@
-write-kubeconfig-mode: "0644"
+write-kubeconfig-mode: 644
 tls-san:
-  - "foo.local"
+- ${rch1}
+- ${10.1.0.105}
+- ${10.1.0.104}
