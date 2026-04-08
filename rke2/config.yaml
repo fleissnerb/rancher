@@ -1,5 +1,8 @@
 write-kubeconfig-mode: 644
+#server: https://${RKE2_API_VIP}:9345
+#token: ${NODE_JOIN_TOKEN}
 tls-san:
-- ${rch1}
-- ${10.1.0.105}
-- ${10.1.0.104}
+- 10.1.0.105  #VIP hostname
+- 10.1.0.105  #VIP
+- rch1  #node hostname
+- 10.1.0.104  #node IP
